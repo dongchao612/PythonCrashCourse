@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+</head>
+<body>
+
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> /
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
+    <!-- 生成一个URL，该URL与learning_logs/urls.py中定义的名为index的URL模式匹配  -->
+</p>
+
+{% block content %}
+
+{% endblock content %}
+<!--插入了一对块标签。这个块名为content，是一个占位符，其中包含的信息将由子模板指定。-->
+</body>
+</html>
