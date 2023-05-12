@@ -19,6 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [  # 该模块定义了可在管理网站中请求的所有URL。
     url(r'^admin/', admin.site.urls),
-
+    url(r'^users/', include('users.urls', namespace='users')),
     url(r'', include('learning_logs.urls', namespace='learning_logs')),
 ]
