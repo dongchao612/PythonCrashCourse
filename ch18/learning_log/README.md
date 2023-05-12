@@ -74,7 +74,7 @@ INSTALLED_APPS = [
     # 我的应用程序
     'learning_logs',
         
-    pass
+    # --skip--
 ]
 ```
 
@@ -126,6 +126,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path(r'', include('learning_logs.urls', namespace='learning_logs')),
 ]
 ```
@@ -162,8 +163,6 @@ def index(request):
     """学习笔记的主页"""
     return render(request, 'learning_logs/index.html')
 ```
-
-
 
 ### 2 模板继承
 
@@ -211,8 +210,8 @@ from . import views
 app_name = "learning_logs"
 
 urlpatterns = [
-    # 主页
-    url(r'^$', views.index, name='index'),
+	# --skip--
+    
 
     # 显示所有的主题
     url(r'^topics/$', views.topics, name='topics'),
@@ -229,9 +228,7 @@ from django.shortcuts import render
 from learning_logs.models import Topic
 
 
-def index(request):
-    """学习笔记的主页"""
-    return render(request, 'learning_logs/index.html')
+# --skip--
 
 
 def topics(request):
@@ -293,19 +290,16 @@ from . import views
 app_name = "learning_logs"
 
 urlpatterns = [
-    # 主页
-    url(r'^$', views.index, name='index'),
+    # --skip--
 
-    # 显示所有的主题
-    url(r'^topics/$', views.topics, name='topics'),
-
+    
     # 特定主题的详细页面
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
 ]
 
 ```
 
-#### 2 编写视图
+#### 2 视图
 
 ```python
 # view.py
@@ -315,16 +309,7 @@ from django.shortcuts import render
 from learning_logs.models import Topic
 
 
-def index(request):
-    """学习笔记的主页"""
-    return render(request, 'learning_logs/index.html')
-
-
-def topics(request):
-    """显示所有的主题"""
-    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
-    context = {'topics': topics}
-    return render(request, 'learning_logs/topics.html', context)
+# --skip--
 
 
 def topic(request, topic_id):

@@ -1,7 +1,10 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
-from learning_logs.models import Topic
+from django.urls import reverse
+
+from learning_logs.models import Topic, Entry
 
 
 def index(request):
@@ -22,3 +25,4 @@ def topic(request, topic_id):
     entries = topic.entry_set.order_by('-date_added')
     context = {'topic': topic, 'entries': entries}
     return render(request, 'learning_logs/topic.html', context)
+
