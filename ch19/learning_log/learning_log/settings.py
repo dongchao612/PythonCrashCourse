@@ -36,6 +36,7 @@ INSTALLED_APPS = [
 
     # 我的应用程序
     'learning_logs',
+    'users',
 
     'django.contrib.admin',
     'django.contrib.auth',

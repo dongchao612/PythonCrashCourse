@@ -19,49 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b356b9-ace1-40dd-8eb6-7fa4f506ee4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch18/learning_log/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/change.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_log/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_log/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_log/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_log/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/migrations/0002_entry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/migrations/0003_topic_owner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/edit_entry.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/new_entry.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/new_topic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/topic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/templates/learning_logs/topics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/learning_logs/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/run.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/templates/users/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/templates/users/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch18/users/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="50b356b9-ace1-40dd-8eb6-7fa4f506ee4e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +75,7 @@
       <workItem from="1683854893563" duration="270000" />
       <workItem from="1683856485013" duration="11002000" />
       <workItem from="1683873278193" duration="1215000" />
+      <workItem from="1684391879427" duration="21000" />
     </task>
     <servers />
   </component>

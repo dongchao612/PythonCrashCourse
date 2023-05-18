@@ -2,23 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Topic</title>
+    <title>edit_entry</title>
 </head>
 <body>
 {% extends "learning_logs/base.html" %}
-
 {% block content %}
-
     <p><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a></p>
-    <p>修改条目</p>
-
-
+    <p>编辑条目:</p>
     <form action="{% url 'learning_logs:edit_entry' entry.id %}" method='post'>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button name="submit">save changes</button>
+        {% csrf_token %}
+        {{ form.as_p }}
+    <button name="submit">保存更改</button>
     </form>
 {% endblock content %}
-
 </body>
 </html>

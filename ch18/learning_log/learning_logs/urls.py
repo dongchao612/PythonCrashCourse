@@ -1,7 +1,7 @@
-"""定义learning_logs的URL模式"""
 
 from django.conf.urls import url
-from . import views
+
+from learning_logs import views
 
 app_name = "learning_logs"
 
@@ -14,5 +14,4 @@ urlpatterns = [
 
     # 特定主题的详细页面
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
-
 ]

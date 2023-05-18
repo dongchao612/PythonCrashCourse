@@ -15,7 +15,7 @@ def index(request):
 
 def topics(request):
     """显示所有的主题"""
-    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
+    topics = Topic.objects.order_by('date_added')
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
 
@@ -28,6 +28,9 @@ def topic(request, topic_id):
     return render(request, 'learning_logs/topic.html', context)
 
 
+# ************************************************************************************#
+
+
 def new_topic(request):
     """添加新主题"""
     if request.method != 'POST':
@@ -37,12 +40,11 @@ def new_topic(request):
         # POST提交的数据,对数据进行处理
         form = TopicForm(request.POST)
         if form.is_valid():
-            form.instance.owner = request.user
+            form.instance.owner=request.user
             form.save()
             return HttpResponseRedirect(reverse('learning_logs:topics'))
     context = {'form': form}
     return render(request, 'learning_logs/new_topic.html', context)
-
 
 def new_entry(request,topic_id):
     """在特定的主题中添加新条目"""
@@ -62,7 +64,6 @@ def new_entry(request,topic_id):
     context = {'topic': topic, 'form': form}
     return render(request, 'learning_logs/new_entry.html', context)
 
-
 def edit_entry(request, entry_id):
     """编辑既有条目"""
     entry = Entry.objects.get(id=entry_id)
@@ -76,6 +77,7 @@ def edit_entry(request, entry_id):
         form = EntryForm(instance=entry, data=request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('learning_logs:topic', args=[topic.id]))
+            return HttpResponseRedirect(reverse('learning_logs:topic',args=[topic.id]))
     context = {'entry': entry, 'topic': topic, 'form': form}
     return render(request, 'learning_logs/edit_entry.html', context)
+
